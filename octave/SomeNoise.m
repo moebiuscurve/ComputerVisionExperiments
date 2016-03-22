@@ -1,0 +1,11 @@
+img = imread('images/dolphin.png');
+imshow(img);
+disp(size(img));
+disp(class(img));
+pause();
+sigma=8;
+noise = randn(size(img)).*sigma;
+output = img + noise;
+imshow(output);
+disp(size(output));
+pause();
