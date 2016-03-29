@@ -3,9 +3,11 @@ pkg load image;
 
 %Load and convert image to double type,range[0,1] for convenience
 %img = double(rgb2gray(imread('images/octastar.jpeg')))/255;
-img = double(rgb2gray(imread('images/octagon.png')))/255;
+%img = double(rgb2gray(imread('images/octagon.png')))/255;
 %img = double(rgb2gray(imread('images/fruit.png')))/255;
 %img = double(rgb2gray(imread('images/wireframe.jpg')))/255;
+%img = double(rgb2gray(imread('images/breasts.jpg')))/255;
+img = double(rgb2gray(imread('images/butterfly.jpg')))/255;
 imshow(img);
 pause();
 

@@ -10,13 +10,14 @@ sobel = fspecial('sobel');
 % vertical direction
 disp("vertical direction");
 derivative = imfilter(gaussian,sobel);
+%derivative = imfilter(gaussian,flipud(sobel));
 colormap('gray'),imagesc(derivative);
 pause();
 figure, surf(derivative), shading flat;
 pause();
 
 % horizontal direction
-disp("vertical direction");
+disp("horizontal direction");
 derivative = imfilter(gaussian,sobel');
 colormap('gray'), imagesc(derivative);
 pause();

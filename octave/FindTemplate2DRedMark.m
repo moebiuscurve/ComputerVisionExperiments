@@ -18,7 +18,8 @@ imshow(img);
 disp(size(img));
 pause();
 %img2=rgb2gray(img(size(img,1)/2:size(img,1)/2+50,size(img,2)/2:size(img,2)/2+50,:));
-glyph=img(175:340,150:185);
+%glyph=img(175:340,150:185);
+glyph=img(300:440,485:650);
 %imshowpair(img1,img2,'montage');
 imshow(glyph);
 pause();
@@ -29,6 +30,6 @@ pause();
 %plot where the template was found
 colormap('gray'), imagesc(img);
 hold on;
-plot(x, y, 'r+', 'markersize', 26);
+plot(x, y, 'r+', 'markersize', 126);
 hold off;
 pause();
